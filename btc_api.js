@@ -1,5 +1,6 @@
 window.onload = function () {
     getBTC()
+    shittyButtonInfo()
 };
 
 function getBTC() {
@@ -65,4 +66,13 @@ document.getElementById('btcCheckFunc').addEventListener('click', function () {
 
 document.getElementById('shittyButton').addEventListener('click', function () {
     this.style.display = 'none';
+    localStorage.setItem('shittyButtonClicked', 'yes');
 });
+
+function shittyButtonInfo() {
+    if (localStorage.getItem('shittyButtonClicked') === 'yes') {
+        document.getElementById('shittyButton').style.display = 'none';
+    }
+}
+
+setInterval(getBTC, 60000);
