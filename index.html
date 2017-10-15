@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BTC exchange rate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p class="lead">This simple site brings to you BITCOIN exchange rate from
+                <a href='https://blockchain.info/'>blockchain.info </a> API</p>
+            <p>
+                <button class="btn btn-danger btn-lg" id='shittyButton'>
+                    Maybe it uses cookies or something like this. I do not know. OK?
+                </button>
+            </p>
+            <hr class="my-4">
+            <p id="descWARN" class="alert alert-danger">No conection to API. Sorry, try again later.</p>
+            <p id="descSUCCESS" class="alert alert-success"></p>
+
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-header">PLN</div>
+                    <div class="card-body">
+                        <h4 class="card-title">1 BTC</h4>
+                        <p class="card-text" id="PLN">:(</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-header">USD</div>
+                    <div class="card-body">
+                        <h4 class="card-title">1 BTC</h4>
+                        <p class="card-text" id="USD">:(</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-header">GBP</div>
+                    <div class="card-body">
+                        <h4 class="card-title">1 BTC</h4>
+                        <p class="card-text" id="GBP">:(</p>
+
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-header">EUR</div>
+                    <div class="card-body">
+                        <h4 class="card-title">1 BTC</h4>
+                        <p class="card-text" id="EUR">:(</p>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="lead">
+                <button id="refreshBTN" class="btn btn-primary btn-lg">Refresh</button>
+            </p>
+        </div>
+
+        <div class="jumbotron">
+            <p class="lead">Convert your currency to BTC.</p>
+            <hr class="my-4">
+            <form class="form-inline">
+                <label class="sr-only" for="fiatGet">FIAT</label>
+                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="fiatGet" placeholder="15" min="0">
+
+                <select class="custom-select" id='formSlect'>
+                    <option value="PLN">PLN</option>
+                    <option value="USD">USD</option>
+                    <option value="GPB">GPB</option>
+                    <option value="EUR">EUR</option>
+                </select>
+
+                <label class=" sr-only " for="resultInBTC ">BTC</label>
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0 ">
+                    <div class="input-group-addon ">BTC</div>
+                    <input type="text " class="form-control " id="resultInBTC" disabled>
+                </div>
+            </form>
+
+            <hr class="my-4 ">
+            <p class="lead ">
+                <button class="btn btn-primary btn-lg " id="btcCheckFunc">Check</button>
+            </p>
+        </div>
+
+        <script src="js/btc_api.js "></script>
+</body>
+
+
+</html>
