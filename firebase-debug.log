@@ -1,0 +1,16 @@
+[debug] [2017-10-15T12:53:31.861Z] ----------------------------------------------------------------------
+[debug] [2017-10-15T12:53:31.864Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Robert\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-10-15T12:53:31.864Z] CLI Version:   3.13.1
+[debug] [2017-10-15T12:53:31.864Z] Platform:      win32
+[debug] [2017-10-15T12:53:31.864Z] Node Version:  v8.4.0
+[debug] [2017-10-15T12:53:31.864Z] Time:          Sun Oct 15 2017 14:53:31 GMT+0200 (Środkowoeuropejski czas letni)
+[debug] [2017-10-15T12:53:31.865Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-15T12:53:31.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-15T12:53:31.878Z] > authorizing via signed-in user
+[debug] [2017-10-15T12:53:31.880Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bitcoin-checker-blockchain  
+ Sun Oct 15 2017 14:53:31 GMT+0200 (Środkowoeuropejski czas letni)
+[debug] [2017-10-15T12:53:32.794Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-15T12:53:32.796Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bitcoin-checker-blockchain/tokens  
+ Sun Oct 15 2017 14:53:32 GMT+0200 (Środkowoeuropejski czas letni)
+[debug] [2017-10-15T12:53:38.674Z] <<< HTTP RESPONSE 200
