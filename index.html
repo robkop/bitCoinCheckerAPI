@@ -29,6 +29,7 @@
                     <div class="card-body">
                         <h4 class="card-title">1 BTC</h4>
                         <p class="card-text" id="PLN">:(</p>
+                        <p class="card-text myw" id="myPLN"></p>
                     </div>
 
                 </div>
@@ -37,6 +38,7 @@
                     <div class="card-body">
                         <h4 class="card-title">1 BTC</h4>
                         <p class="card-text" id="USD">:(</p>
+                        <p class="card-text myw" id="myUSD"></p>
                     </div>
 
                 </div>
@@ -45,6 +47,7 @@
                     <div class="card-body">
                         <h4 class="card-title">1 BTC</h4>
                         <p class="card-text" id="GBP">:(</p>
+                        <p class="card-text myw" id="myGBP"></p>
 
                     </div>
 
@@ -54,11 +57,21 @@
                     <div class="card-body">
                         <h4 class="card-title">1 BTC</h4>
                         <p class="card-text" id="EUR">:(</p>
+                        <p class="card-text myw" id="myEUR"></p>
                     </div>
 
                 </div>
             </div>
-
+            <hr class="my-4">
+            <div class="alert alert-warning" role="alert">
+                How much BTC do you have? Set it and we will calculate it for you.
+                <div class="input-group">
+                    <input type="number" id="myBTCvalue" class="form-control" placeholder="BTC" aria-label="BTC">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" id="saveMyBTCvalue" type="button">Save</button>
+                    </span>
+                </div>
+            </div>
             <hr class="my-4">
             <div class="alert alert-info" role="alert">
                 <span id="getETH"></span>
@@ -69,32 +82,7 @@
             </p>
         </div>
 
-        <div class="jumbotron">
-            <p class="lead">Convert your currency to BTC.</p>
-            <hr class="my-4">
-            <form class="form-inline">
-                <label class="sr-only" for="fiatGet">FIAT</label>
-                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="fiatGet" placeholder="15" min="0">
 
-                <select class="custom-select" id='formSlect'>
-                    <option value="PLN">PLN</option>
-                    <option value="USD">USD</option>
-                    <option value="GPB">GPB</option>
-                    <option value="EUR">EUR</option>
-                </select>
-
-                <label class=" sr-only " for="resultInBTC ">BTC</label>
-                <div class="input-group mb-2 mr-sm-2 mb-sm-0 ">
-                    <div class="input-group-addon ">BTC</div>
-                    <input type="text " class="form-control " id="resultInBTC" disabled>
-                </div>
-            </form>
-
-            <hr class="my-4 ">
-            <p class="lead ">
-                <button class="btn btn-primary btn-lg " id="btcCheckFunc">Check</button>
-            </p>
-        </div>
 
         <script src="js/btc_api.js "></script>
 
