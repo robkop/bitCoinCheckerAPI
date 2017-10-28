@@ -91,22 +91,22 @@ function getETH() {
     };
 }
 
+function hideOrNieHide(a) {
+    const u = document.getElementsByClassName('myw');
+    let i = 0;
+    for (i = 0; i < u.length; i++) {
+        u[i].style.display = a;
+    }
+}
+
 function myMyBTCvalue() {
     const y = localStorage.getItem('btc');
     if (y === null || y === undefined) {
-        return false
+        hideOrNieHide('none');
     } else if (y == 0) {
-        const u = document.getElementsByClassName('myw');
-        let i = 0;
-        for (i = 0; i < u.length; i++) {
-            u[i].style.display = 'none';
-        }
+        hideOrNieHide('none');
     } else {
-        const u = document.getElementsByClassName('myw');
-        let i = 0;
-        for (i = 0; i < u.length; i++) {
-            u[i].style.display = 'block';
-        }
+        hideOrNieHide('block');
         const x = localStorage.getItem('btc');
         const myPLN = x * values[0];
         const myUSD = x * values[1];
